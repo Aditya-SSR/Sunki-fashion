@@ -1,0 +1,269 @@
+@font-face {
+    font-family: BitcountPropSingle;
+    src: url(./fonts/BitcountPropSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    height: 73px;
+    background-color: black;
+    color: #ffd700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+.sunkih1 {
+    font-family: BitcountPropSingle;
+    font-size: 1.5rem;
+}
+
+.nav-ops {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-right: 1rem;
+}
+
+.nav-ops a {
+    text-decoration: none;
+    color: white;
+}
+
+.highlight:hover {
+    color: #ffd700;
+    transition: 0.5s ease;
+}
+
+/* Hero Section */
+.hero-landing {
+    background-color: #222222a6;
+    background-image: url(./images/backdroppp.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-h1 {
+    color: #ffd700;
+    font-size: 64px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-family: BitcountPropSingle;
+}
+
+.tagline {
+    color: #f5f5f5;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 30px;
+    background-color: #ffd700;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #d2b302;
+    transition: 0.5s ease;
+}
+
+/* Categories */
+.div-cat {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+}
+
+.signature {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.all-btn, .shirts-btn, .shoes-btn {
+    padding: 10px 20px;
+    border: 1px solid #4f4f4f;
+    background-color: #333333;
+    color: white;
+    font-size: 13px;
+    transition: 0.4s ease;
+}
+
+.all-btn:hover, .shirts-btn:hover, .shoes-btn:hover {
+    background-color: #ffd700;
+    color: black;
+    font-size: 13px;
+    border: 1px solid #ffd700;
+    cursor: pointer;
+}
+
+/* Products */
+.products-container {
+    background-color: #121212;
+    padding: 40px 0;
+    color: white;
+}
+
+.four-cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.luxury-shirts, .luxury-shoes {
+    text-align: center;
+    color: #ffd700;
+    font-family: BitcountPropSingle;
+    font-size: 24px;
+}
+
+.shirts, .shoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gold-shirt, .platinum-shirt, .midnight-shoes, .golden-cleats {
+    background-color: #1e1e1e;
+    width: 250px;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+
+.logo-w-shirt, .logo-p-shirt, .logo-m-shoes, .logo-gol-cleats {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-w-shirt { background-image: url(./images/shirt1.png); }
+.logo-p-shirt { background-image: url(./images/shirt2.png); }
+.logo-m-shoes { background-image: url(./images/boots2.png); }
+.logo-gol-cleats { background-image: url(./images/boots1.png); }
+
+.gold-shirt h3, .platinum-shirt h3, .midnight-shoes h3, .golden-cleats h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #ffd700;
+}
+
+.gold-shirt p, .platinum-shirt p, .midnight-shoes p, .golden-cleats p {
+    text-align: center;
+    color: #ffcc00;
+    font-family: BitcountPropSingle;
+}
+
+.border-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    padding: 20px 0;
+    color: #ffd700;
+    text-align: center;
+}
+
+.footer-div p {
+    font-family: BitcountPropSingle;
+    font-size: 18px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        gap: 0.5rem;
+    }
+
+    .nav-ops {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        margin-right: 0;
+    }
+
+    .hero-h1 {
+        font-size: 40px;
+    }
+
+    .tagline {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .gold-shirt, .platinum-shirt, .midnight-shoes, .golden-cleats {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .signature {
+        font-size: 20px;
+    }
+
+    .luxury-shirts, .luxury-shoes {
+        font-size: 20px;
+    }
+
+    .footer-div p {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+}
+
+
+
+
+
+
+
+
